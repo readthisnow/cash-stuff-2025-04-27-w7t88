@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +17,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-inter antialiased">
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Cash Stuff</a>
-                <button class="lg:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
+                <a href="https://readthisnow.github.io/cash-stuff-2025-04-27-w7t88" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">Cash Stuff</a>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
                     <a href="https://amzn.to/3RATnVe" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">Shop Nu</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 hover:text-purple-400 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 hover:text-purple-400 transition-colors duration-300">Voordelen</a>
+                <a href="#testimonials" class="block py-2 hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 hover:text-purple-400 transition-colors duration-300">Over Ons</a>
+                <a href="#faq" class="block py-2 hover:text-purple-400 transition-colors duration-300">FAQ</a>
+                <a href="https://amzn.to/3RATnVe" class="block py-2 mt-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-center font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">Shop Nu</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="relative min-h-screen flex items-center justify-center py-24 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-gray-900"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9uZXl8fHx8fHwxNzA2NjM0NzIw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-gray-900/90"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Koop Cash Stuff Met Korting</h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Mis deze exclusieve deals niet! Beperkte voorraad beschikbaar.</p>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Ontdek onze exclusieve deals met kortingen tot wel 70%! Beperkte voorraad beschikbaar - Grijp nu je kans.</p>
                     <a href="https://amzn.to/3RATnVe" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-lg font-semibold hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">Bekijk Aanbiedingen</a>
                 </div>
             </div>
@@ -46,16 +64,35 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">Exclusieve Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-102">
                         <div class="text-purple-400 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Beste Prijzen</h3>
-                        <p class="text-gray-400">Nog maar enkele items beschikbaar tegen deze prijzen!</p>
+                        <h3 class="text-2xl font-semibold mb-4">Beste Prijzen Garantie</h3>
+                        <p class="text-gray-400">Wij garanderen de laagste prijzen op de markt. Vind je het ergens anders goedkoper? Dan krijg je het verschil terug!</p>
                     </div>
-                    <!-- More feature cards would go here -->
+                    
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Premium Kwaliteit</h3>
+                        <p class="text-gray-400">Elk product wordt streng gecontroleerd op kwaliteit. 100% tevredenheidsgarantie of geld terug.</p>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-102">
+                        <div class="text-purple-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">24/7 Support</h3>
+                        <p class="text-gray-400">Ons toegewijde support team staat dag en nacht voor je klaar om al je vragen te beantwoorden.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -64,11 +101,72 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">Voordelen</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div class="bg-gray-800 p-8 rounded-2xl">
-                        <h3 class="text-2xl font-semibold mb-4">Snelle Levering</h3>
-                        <p class="text-gray-400">Bestel nu en ontvang je items binnen enkele dagen!</p>
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-2xl font-semibold mb-4">Express Levering</h3>
+                        <p class="text-gray-400">Gratis express levering op alle bestellingen boven €50. Ontvang je bestelling binnen 24 uur na verzending.</p>
                     </div>
-                    <!-- More benefit cards would go here -->
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-102">
+                        <h3 class="text-2xl font-semibold mb-4">Flexibele Betaling</h3>
+                        <p class="text-gray-400">Kies uit verschillende betaalmethoden inclusief iDEAL, creditcard en AfterPay. Veilig en vertrouwd.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Wat Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Ongelooflijke service en de beste prijzen die ik ooit heb gezien. Binnen 24 uur geleverd!"</p>
+                        <p class="font-semibold">Lisa van der Berg</p>
+                        <p class="text-sm text-gray-400">Marketing Manager, TechCo</p>
+                    </div>
+
+                    <div class="bg-gray-900 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Al drie keer besteld en elke keer perfect. De klantenservice is uitzonderlijk behulpzaam."</p>
+                        <p class="font-semibold">Mark Jansen</p>
+                        <p class="text-sm text-gray-400">Eigenaar, Digital Solutions</p>
+                    </div>
+
+                    <div class="bg-gray-900 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"De beste deals en altijd op tijd geleverd. Kan niet beter!"</p>
+                        <p class="font-semibold">Emma de Vries</p>
+                        <p class="text-sm text-gray-400">Financieel Adviseur</p>
+                    </div>
+
+                    <div class="bg-gray-900 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Geweldige ervaring van begin tot eind. Zal zeker weer bestellen!"</p>
+                        <p class="font-semibold">Thomas Bakker</p>
+                        <p class="text-sm text-gray-400">CEO, StartupNL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Over Ons</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Cash Stuff werd in 2020 opgericht met één missie: het toegankelijk maken van premium producten voor iedereen. Wat begon als een klein initiatief is uitgegroeid tot één van Nederlands meest vertrouwde online retailers voor exclusieve deals.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Onze kernwaarden zijn transparantie, klanttevredenheid en kwaliteit. We streven ernaar om elke dag het verschil te maken voor onze klanten door de beste producten aan te bieden tegen de scherpste prijzen, ondersteund door ongeëvenaarde klantenservice.
+                    </p>
                 </div>
             </div>
         </section>
@@ -77,11 +175,30 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-900 rounded-lg p-6">
+                    <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
                         <h3 class="text-xl font-semibold mb-4">Hoe lang duurt de levering?</h3>
-                        <p class="text-gray-400">Meestal binnen 2-3 werkdagen.</p>
+                        <p class="text-gray-400">Bestellingen worden binnen 24 uur verwerkt en meestal binnen 1-3 werkdagen geleverd. Express levering is beschikbaar voor bestellingen boven €50.</p>
                     </div>
-                    <!-- More FAQ items would go here -->
+
+                    <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Wat is jullie retourbeleid?</h3>
+                        <p class="text-gray-400">Je hebt 30 dagen bedenktijd na ontvangst van je bestelling. Retourneren is gratis en eenvoudig via ons online retourportaal.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Zijn de prijzen inclusief BTW?</h3>
+                        <p class="text-gray-400">Ja, alle getoonde prijzen zijn inclusief BTW en eventuele andere belastingen. Er komen geen verborgen kosten bij.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Hoe kan ik contact opnemen met klantenservice?</h3>
+                        <p class="text-gray-400">Onze klantenservice is 24/7 bereikbaar via live chat, email of telefoon. We streven ernaar om binnen 1 uur te reageren.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Zijn de producten origineel?</h3>
+                        <p class="text-gray-400">Wij verkopen uitsluitend 100% originele producten met volledige garantie van de fabrikant. Authenticiteit gegarandeerd.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -101,8 +218,9 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Links</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/cash-stuff-2025-04-27-w7t88/privacy.html" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/cash-stuff-2025-04-27-w7t88/terms.html" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/cash-stuff-2025-04-27-w7t88/blog.html" class="hover:text-purple-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -111,5 +229,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
